@@ -5,48 +5,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Контакты - Туризм в Европе</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .header-bg {
+            background: url('https://via.placeholder.com/1200x300') no-repeat center center;
+            background-size: cover;
+            color: white;
+        }
+        .form-bg {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+        }
+    </style>
 </head>
 <body>
-    <header class="bg-primary text-white text-center py-5">
-        <h1>Контакты</h1>
-        <nav>
-            <ul class="nav justify-content-center">
-                <li class="nav-item"><a class="nav-link text-white" href="index.html">Главная</a></li>
-                <li class="nav-item"><a class="nav-link text-white" href="about.html">О нас</a></li>
-                <li class="nav-item"><a class="nav-link text-white" href="contacts.html">Контакты</a></li>
-            </ul>
+    <header class="header-bg text-center py-5">
+        <h1 class="display-4">Контакты</h1>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark mt-4">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">О нас</a></li>
+                        <li class="nav-item active"><a class="nav-link" href="contacts.html">Контакты</a></li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
 
     <main class="container mt-5">
-        <section>
-            <h2>Свяжитесь с нами</h2>
-            <form>
-                <div class="form-group">
-                    <label for="name">Имя:</label>
-                    <input type="text" class="form-control" id="name" name="name" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input type="email" class="form-control" id="email" name="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="message">Сообщение:</label>
-                    <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">Отправить</button>
-            </form>
-        </section>
-        <section class="mt-5">
-            <h2>Наши контакты</h2>
-            <address>
-                <p>Email: <a href="mailto:info@tourism-europe.com">info@tourism-europe.com</a></p>
-                <p>Телефон: +1 (234) 567-890</p>
-            </address>
+        <section class="row">
+            <div class="col-md-6 form-bg">
+                <h2 class="mb-4">Свяжитесь с нами</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="name">Имя:</label>
+                        <input type="text" class="form-control" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Сообщение:</label>
+                        <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Отправить</button>
+                </form>
+            </div>
+            <div class="col-md-6">
+                <h2 class="mb-4">Наши контакты</h2>
+                <address>
+                    <p><strong>Email:</strong> <a href="mailto:info@tourism-europe.com">info@tourism-europe.com</a></p>
+                    <p><strong>Телефон:</strong> +1 (234) 567-890</p>
+                    <p><strong>Адрес:</strong> ул. Пушкина, д. Колотушкина, г. Москва, Россия</p>
+                </address>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2245.372931826977!2d37.61555631593092!3d55.75222008055749!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a50b315e573%3A0xa886bf5a3d9b2e68!2z0JzQvtGB0LrQstCw!5e0!3m2!1sru!2sru!4v1629449824000!5m2!1sru!2sru" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
         </section>
     </main>
 
-    <footer class="bg-light text-center py-3 mt-5">
+    <footer class="bg-dark text-white text-center py-3 mt-5">
         <p>© 2023 Туризм в Европе. Все права защищены.</p>
     </footer>
 
